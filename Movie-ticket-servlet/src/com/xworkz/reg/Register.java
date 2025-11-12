@@ -27,7 +27,7 @@ public class Register extends HttpServlet {
 
         printWriter.println("<h1 style=color:red>");
 
-printWriter.println("Registerd succesfull");
+        printWriter.println("Registerd succesfull");
 
         printWriter.println("</h1>");
 
