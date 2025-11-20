@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body style="text-align:left;backgroundcolor:gray" >
+<div style="display: flex; align-items: center; justify-content: center; width: 100vw; background-color: #fffff">
+    <div style="width: 50vw; margin: 10px 0 10px 0; box-shadow: 0px 0px 20px 0px">
+        <form style="padding:50px" action="survey" method="post">
+            <h1 style="color:blue; text-align:center;font-family: Cursive" >Government Survey Form</h1>
+            <div style="text-align:center" id="emailHelp" class="form-text">We'll never share your Details with anyone else.</div>
+            <br>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Name</label>
+                <input name ="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Occupation</label>
+                <input name="occup" type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Education</label>
+                <input name="education" type="text" class="form-control" id="education">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Native Place</label>
+                <input  type="text" class="form-control" id="form2" name="nativeLocate">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Bike Number </label>
+                <input  type="text" class="form-control" id="form3" name="bike">
+                <div style="text-align:left" id="emailHelp1" class="form-text">If you have Bike, Give Registered Number.</div>
+
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Car Number </label>
+                <input  type="text" class="form-control" id="form4" name="car">
+                <div style="text-align:left" id="emailHelp2" class="form-text">If you have Car, Give Registered Number.</div>
+
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Mobile number</label>
+                <input  type="text" class="form-control" id="form5" name="mobile" placeholder="+91" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Adhar Card Number </label>
+                <input  type="number" class="form-control" id="form6" name="adhar" placeholder="Enter 12 Digit Adhar number" required >
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Pan Card Number </label>
+                <input  type="text" class="form-control" id="form8" name=" pan" placeholder="Enter 10 digit pan number">
+
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Voter Id </label>
+                <input  type="text" class="form-control" id="form9" name="vote" placeholder="Enter 10 digit VoterId ">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Ration card Number </label>
+                <input  type="text" class="form-control" id="form10" name=" ration " placeholder="only 14 character allowed">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Passport number </label>
+                <input  type="text" class="form-control" id="form11" name=" pass">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Bank Account Number</label>
+                <input  type="number" class="form-control" id="form 12" name="bank " required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Father Name </label>
+                <input  type="text" class="form-control" id="form 13" name="father ">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Mother Name </label>
+                <input  type="text" class="form-control" id="form14" name="mother ">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Are you Married </label>
+                <input  type="text" class="form-control" id="form15" name=" married" placeholder="'Yes' or 'No' ">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Husband/Wife name </label>
+                <input  type="text" class="form-control" id="form16 " name="hus" placeholder="if you are unmarried type single">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> No of Children </label>
+                <input  type="number" class="form-control" id="form17" name="child " required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> No of Family Members </label>
+                <input  type="number" class="form-control" id="form18 " name="family">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Insurance No </label>
+                <input  type="number" class="form-control" id="form19" name="insurance ">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Laptop Model Name </label>
+                <input  type="text" class="form-control" id="form20 " name="laptop " placeholder="if you do not have laptop , skip this box">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Tv Model Name </label>
+                <input  type="text" class="form-control" id="form21" name="tv" placeholder="if you do not have TV , skip this box">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Land in Acres </label>
+                <input  type="number" class="form-control" id="form22" name=" land">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Total Sites </label>
+                <input  type="number" class="form-control" id="form23" name="site ">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Are you Tax payer </label>
+                <input  type="text" class="form-control" id="form24 " name="tax " placeholder="'Yes' or 'No'">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Any Government Employee in your family </label>
+                <input  type="text" class="form-control" id="form25" name="employee " placeholder="'Yes' or 'No' ">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Caste </label>
+                <input  type="text" class="form-control" id="form26" name="caste ">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Religion </label>
+                <input  type="text" class="form-control" id="form27" name="religion ">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Mother Tongue </label>
+                <input  type="text" class="form-control" id="form28" name="tongue">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Date of Birth </label>
+                <input  type="date" class="form-control" id="form29" name="dob ">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Known Disease </label>
+                <input  type="text" class="form-control" id="form30 " name="disease ">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Height </label>
+                <input  type="number" class="form-control" id="form31" name="height " placeholder="Enter height in cm">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Weight </label>
+                <input  type="number" class="form-control" id="form32" name="weight" placeholder="Enter weight in (KG) ">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Blood group </label>
+                <input  type="text" class="form-control" id="form33" name="blood " placeholder=" +ve or -ve">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Shoes size </label>
+                <input  type="number" class="form-control" id="form34" name="shoes " placeholder="Enter Shoes size in inches">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Electric bill no </label>
+                <input  type="number" class="form-control" id="form35 " name="electric ">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Water bill no </label>
+                <input  type="number" class="form-control" id="form36" name="water ">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Rental house </label>
+                <input  type="text" class="form-control" id="form37" name=" rental" placeholder="'Yes' or 'No' ">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Own house </label>
+                <input  type="text" class="form-control" id="form38" name="own" placeholder="'Yes' or 'No' ">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Building owner name </label>
+                <input  type="text" class="form-control" id="form39 " name="owner ">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Loan no </label>
+                <input  type="number" class="form-control" id="form40" name=" loan" >
+                <div style="text-align:left" id="emailHelp12" class="form-text">If you have Loan, Give Loan Number or else skip .</div>
+
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> How much gold you have </label>
+                <input  type="number" class="form-control" id="form41" name="gold" placeholder=" in grams">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> How much silver you have </label>
+                <input  type="number" class="form-control" id="form42 " name="silver " placeholder="in grams">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Pet Names </label>
+                <input  type="text" class="form-control" id="form43" name="pet">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> No of cows </label>
+                <input  type="text" class="form-control" id="form44" name=" cows">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> No of Shares holding in company </label>
+                <input  type="text" class="form-control" id="form45" name="company " placeholder="company name">
+                <input  type="number" class="form-control" id="form46" name="shares" placeholder="no of shares">
+
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>
