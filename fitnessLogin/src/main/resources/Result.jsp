@@ -7,15 +7,17 @@
     Register Status:
     <span style="color:green;">${Success}</span>
     <span style="color:red;">${Invalid}</span>
+    <span style="color:red;">${Check}</span>
+    <span style="color:red;">${Email}</span>
 </h1>
 
-<p style="font-size:16px; margin:5px 0;"><b>Name:</b> ${name}</p>
-<p style="font-size:16px; margin:5px 0;"><b>Email:</b> ${email}</p>
-<p style="font-size:16px; margin:5px 0;"><b>Age:</b> ${age}</p>
-<p style="font-size:16px; margin:5px 0;"><b>Gender:</b> ${gender}</p>
-<p style="font-size:16px; margin:5px 0;"><b>Weight:</b> ${weight}</p>
-<p style="font-size:16px; margin:5px 0;"><b>Height:</b> ${height}</p>
-<p style="font-size:16px; margin:5px 0;"><b>Address:</b> ${address}</p>
+<p style="font-size:16px; margin:5px 0;"><b>Name:</b> ${dto.name}</p>
+<p style="font-size:16px; margin:5px 0;"><b>Email:</b> ${dto.email}</p>
+<p style="font-size:16px; margin:5px 0;"><b>Age:</b> ${dto.age}</p>
+<p style="font-size:16px; margin:5px 0;"><b>Gender:</b> ${dto.gender}</p>
+<p style="font-size:16px; margin:5px 0;"><b>Weight:</b> ${dto.wight}</p>
+<p style="font-size:16px; margin:5px 0;"><b>Height:</b> ${dto.height}</p>
+<p style="font-size:16px; margin:5px 0;"><b>Address:</b> ${dto.address}</p>
 
 </div>
 

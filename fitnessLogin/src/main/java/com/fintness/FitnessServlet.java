@@ -1,8 +1,10 @@
 package com.fintness;
 
 import com.fintness.Dto.FitnessDto;
+import com.fintness.exeception.DataDuplication;
 import com.fintness.exeception.InvalidException;
 import com.fintness.service.FitnessServiceImpl;
+import lombok.SneakyThrows;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,12 +12,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.SQLException;
+
 @WebServlet (urlPatterns = "/success",loadOnStartup = 1)
 public class FitnessServlet extends HttpServlet {
-    FitnessServiceImpl service=new FitnessServiceImpl();
 
+    FitnessServiceImpl service=new FitnessServiceImpl();
+    @SneakyThrows
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("Do post is running");
+       System.out.println("Do post is running");
        String name1= req.getParameter("name");
        String email1 =req.getParameter("email");
        String  age1=req.getParameter("age");
@@ -30,18 +35,26 @@ public class FitnessServlet extends HttpServlet {
 
         try {
             service.validate(fitnessDto);
-            req.setAttribute("name", name1);
-            req.setAttribute("email", email1);
-            req.setAttribute("age", age1);
-            req.setAttribute("gender", gender1);
-            req.setAttribute("address",address1);
-            req.setAttribute("weight",weight1);
-            req.setAttribute("height",height1);
+//            req.setAttribute("name", name1);
+//            req.setAttribute("email", email1);
+//            req.setAttribute("age", age1);
+//            req.setAttribute("gender", gender1);
+//            req.setAttribute("address",address1);
+//            req.setAttribute("weight",weight1);
+//            req.setAttribute("height",height1);
             req.setAttribute("Success","valid");
+            req.setAttribute("dto",fitnessDto);
 
-        }catch (InvalidException ie){
+
+        }catch (InvalidException ie) {
             req.setAttribute("Invalid","error");
-            ie.printStackTrace();
+            req.getRequestDispatcher("Result.jsp").forward(req,resp);
+
+            System.out.println("Data is not valid ");
+        }catch (DataDuplication mm){
+            req.setAttribute("Email","Email is already  registered please provide another email");
+            req.getRequestDispatcher("Result.jsp").forward(req,resp);
+            throw new RuntimeException(mm);
 
         }
         req.getRequestDispatcher("Result.jsp").forward(req,resp);
